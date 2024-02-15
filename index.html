@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="stylesheet.css">
     <script src="scripts.js" defer></script> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,51 @@
 <body>
 
     <!--TextBox displaying calculator inputs-->
-    <input type="text" id="calcNums" name="calcNums" placeholder="Math Stuff">
+    <div class = "Calculator">
+    
+        <input type="text" id="calcNums" name="calcNums" disabled>
 
-    <!--Buttons for numerical values-->
-    <button type="button" class="numbers" id="1">1</button> 
-    <button type="button" class="numbers" id="2">2</button> 
-    <button type="button" class="numbers" id="3">3</button> 
-    <button type="button" class="numbers" id="4">4</button> 
-    <button type="button" class="numbers" id="5">5</button>  
-    <button type="button" class="numbers" id="6">6</button> 
-    <button type="button" class="numbers" id="7">7</button> 
-    <button type="button" class="numbers" id="8">8</button> 
-    <button type="button" class="numbers" id="9">9</button> 
-    <button type="button" class="numbers" id="0">0</button>
+        <div class = calcButtons>
+            <div class = buttonFlex>
 
-    <!--Buttons for operator values-->
-    <button type="button" class="operators" id="add">+</button> 
-    <button type="button" class="operators" id="subtract">-</button> 
-    <button type="button" class="operators" id="divide">/</button>
-    <button type="button" class="operators" id="multiply">*</button>
-    <button type="button" class="operators" id="equals">=</button>
-    <button type="button" class="operators" id="clear">Clear</button>
 
+                <!--Buttons for numerical values-->
+                <div class = row1>
+                    <button type="button" class="numbers" id="1">1</button> 
+                    <button type="button" class="numbers" id="2">2</button> 
+                    <button type="button" class="numbers" id="3">3</button> 
+                </div>
+
+                <div class= row2>
+                    <button type="button" class="numbers" id="4">4</button> 
+                    <button type="button" class="numbers" id="5">5</button>  
+                    <button type="button" class="numbers" id="6">6</button> 
+                </div>
+
+                <div class = row3>
+                    <button type="button" class="numbers" id="7">7</button> 
+                    <button type="button" class="numbers" id="8">8</button> 
+                    <button type="button" class="numbers" id="9">9</button> 
+                </div>
+
+                <div class = row4>
+                    <button type="button" class="numbers" id="0">0</button>
+                    <button type="button" class="numbers" id=".">.</button>
+                    <button type="button" class="operators" id="clear">Cl</button>
+                </div>
+
+            </div>
+
+            <div class = operatorFlex>
+            <!--Buttons for operator values-->
+                <button type="button" class="operators" id="add">+</button> 
+                <button type="button" class="operators" id="subtract">-</button> 
+                <button type="button" class="operators" id="divide">/</button>
+                <button type="button" class="operators" id="multiply">*</button>
+                <button type="button" class="operators" id="equals">=</button>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
